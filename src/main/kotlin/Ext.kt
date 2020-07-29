@@ -4,6 +4,8 @@ object V {
 
     const val flowable = "6.5.0"
 
+    const val lombok = "1.18.12"
+
     const val p6spy = "3.9.0"
 
     const val reactor = "3.3.7.RELEASE"
