@@ -1,7 +1,6 @@
 plugins {
     kotlin("jvm")
 
-    id("org.springframework.boot")
     id("io.spring.dependency-management")
 }
 
@@ -9,12 +8,13 @@ group = "flyinwind"
 version = "0.0.1"
 
 dependencies {
-    api("org.springframework.boot:spring-boot-starter-log4j2")
-    api("org.springframework.boot:spring-boot")
+    api(kotlin("stdlib-jdk8"))
 
-    api("org.springframework:spring-web")
+    api("org.springframework.boot:spring-boot:${V.springBoot}")
+    api("org.springframework.boot:spring-boot-starter-log4j2:${V.springBoot}")
+    api("org.springframework:spring-web:${V.spring}")
 
-    api ("com.fasterxml.jackson.core:jackson-core")
+    api("com.fasterxml.jackson.core:jackson-core:${V.jackson}")
 
     annotationProcessor("org.projectlombok:lombok:${V.lombok}")
 }
