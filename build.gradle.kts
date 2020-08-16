@@ -15,6 +15,8 @@ dependencies {
     api("org.springframework:spring-web:${V.spring}")
 
     api("com.fasterxml.jackson.core:jackson-core:${V.jackson}")
+    api("io.projectreactor:reactor-core:${V.reactor}")
+    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions:${V.reactorKotlinExtensions}")
 
     annotationProcessor("org.projectlombok:lombok:${V.lombok}")
 }
