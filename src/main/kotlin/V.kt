@@ -10,9 +10,10 @@ object V {
 
     const val p6spy = "3.9.0"
 
-    const val reactor = "3.3.7.RELEASE"
+    const val reactor = "3.3.8.RELEASE"
+    const val reactorKotlinExtensions="1.0.2.RELEASE"
 
-    const val spring = "5.2.7.RELEASE"
+    const val spring = "5.2.8.RELEASE"
     const val springDoc = "1.4.1"
     const val springManagement = "1.0.9.RELEASE"
     const val springBoot = "2.3.2.RELEASE"
