@@ -9,11 +9,12 @@ group = "flyinwind"
 version = "0.0.1"
 
 dependencies {
-    api(kotlin("stdlib-jdk8"))
-    api("org.springframework.boot:spring-boot-starter-data-redis:${V.springBoot}")
+    implementation(kotlin("stdlib-jdk8"))
+    implementation("org.springframework.boot:spring-boot-starter-data-redis-reactive:${V.springBoot}")
+    implementation("com.fasterxml.jackson.core:jackson-databind:${V.jackson}")
 }
 
-java{
+java {
     withSourcesJar()
 }
 
