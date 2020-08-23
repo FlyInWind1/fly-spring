@@ -5,6 +5,7 @@ object V {
     const val flowable = "6.5.0"
 
     const val jackson = "2.11.0"
+    const val jjwt = "0.11.2"
 
     const val lombok = "1.18.12"
 
@@ -15,7 +16,7 @@ object V {
 
     const val spring = "5.2.8.RELEASE"
     const val springDoc = "1.4.1"
-    const val springManagement = "1.0.9.RELEASE"
+    const val dependencyManagement = "1.0.10.RELEASE"
     const val springBoot = "2.3.2.RELEASE"
 
     const val mapstruct = "1.4.0.Beta1"
@@ -23,6 +24,6 @@ object V {
     const val mariaJdbc = "2.6.1"
     const val mybatisPlus = "3.3.2"
 
-    const val kotlin = "1.3.72"
+    const val kotlin = "1.4.0"
     const val kotlinLogging = "1.7.9"
 }
