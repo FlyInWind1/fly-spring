@@ -1,6 +1,6 @@
 package fly.spring.common.pojo
 
-import fly.spring.common.core.constant.enums.CommonConstants
+import fly.spring.common.constant.CommonConstants
 import reactor.core.publisher.Mono
 import reactor.kotlin.core.publisher.toMono
 import java.io.Serializable

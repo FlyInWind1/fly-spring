@@ -16,7 +16,7 @@
  *
  */
 
-package fly.spring.common.core.constant.enums;
+package fly.spring.common.constant;
 
 /**
  * @author lengleng
