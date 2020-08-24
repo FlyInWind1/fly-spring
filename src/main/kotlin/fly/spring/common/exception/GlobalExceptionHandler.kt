@@ -15,17 +15,22 @@ class GlobalExceptionHandler {
         val log = KotlinLogging.logger { }
     }
 
+    @ExceptionHandler(GeneralException::class)
+    fun generalException(e: GeneralException): Mono<R<String>> {
+        return R.failed(e.respMessage)
+    }
+
     @ExceptionHandler(JsonParseException::class, org.springframework.boot.json.JsonParseException::class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    fun jsonParseException(exception: Exception): Mono<R<String?>> {
-        log.warn("JsonParse exception:\n {}", exception.message, exception)
-        return R.failed(exception.message)
+    fun jsonParseException(e: Exception): Mono<R<String?>> {
+        log.warn("JsonParse exception:\n {}", e.message, e)
+        return R.failed(e.message)
     }
 
     @ExceptionHandler(Exception::class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    fun exception(exception: Exception): Mono<R<String?>> {
-        log.warn("Global exception:\n {}", exception.message, exception)
-        return R.failed(exception.message)
+    fun exception(e: Exception): Mono<R<String?>> {
+        log.warn("Global exception:\n {}", e.message, e)
+        return R.failed(e.message)
     }
 }
